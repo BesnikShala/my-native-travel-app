@@ -3,8 +3,10 @@ import { Text, View } from 'react-native';
 import { NativeWindStyleSheet } from "nativewind";
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './screens/components/HomeScreen';
-import Discover from './screens/components/Discover';
+import HomeScreen from './screens/HomeScreen';
+import Discover from './screens/Discover';
+
+
 
 
 NativeWindStyleSheet.setOutput({

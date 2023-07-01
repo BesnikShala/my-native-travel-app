@@ -1,9 +1,8 @@
-import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { View, Text, Image, TouchableOpacity, SafeAreaView } from 'react-native'
 import React, { useLayoutEffect } from 'react'
 import * as Animatable from 'react-native-animatable';
 import { useNavigation } from '@react-navigation/native'
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { HeroImage } from '../../assets';
+import { HeroImage } from '../assets';
 
 
 const HomeScreen = () => {
@@ -13,8 +12,8 @@ const HomeScreen = () => {
     useLayoutEffect(() => {
         navigation.setOptions({
             headerShown: false,
-        })
-    }, [])
+        });
+    }, []);
 
   return (
     <SafeAreaView className="bg-white flex-1 relative">
